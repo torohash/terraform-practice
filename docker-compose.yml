@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  terraform:
+    build: .
+    volumes:
+      - ./workspace:/workspace
+    env_file:
+     - .env
